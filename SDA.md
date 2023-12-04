@@ -9,7 +9,7 @@ Because this simulation will be rather large, the architecture of the code will 
 * Speed of the simulation
 * Clear visualization of the simulation
 ## System Overview
-![Image of our system overview](https://docs.google.com/drawings/d/1iHmxXlEgrHnF-FHZ_5YtIo5a6UIRcuwoGMx43rBfp6Y/edit?usp=sharing)
+![Image of our system overview](System_Overview.png?raw=true)
 Our overview is fairly simple. The user will use the command line interface to kick off the script with certain parameters. This will execute compiled c++ code that performs calculations with the parameters and outputs to the GUI. The GUI will display the information back to the user. 
 ## Architectural Patterns
 Our project does not require a web interface so most of the architectural patterns are not applicable. The pattern that seems closest to our needs is MVC architecture. The model will be the backend C++ code that runs the calculations and provides the output to the visualization library. The view will be the graphical component that displays the results of the simulation. The controller will be a command input on the command line that the user selects parameters with for the simulation. 
@@ -20,7 +20,7 @@ Our project does not require a web interface so most of the architectural patter
 ## Data Management
 We won’t need to do any database management because our project has no database component. None of our data is stored (and if that is changed, the data will most likely be exported to CSV format).
 ## Interface Design
-add image here
+![Example of what our interface design may look like](PRDMockup.png?raw=true)
 Our user will interact with the program in two different places. Firstly they will run the script with the appropriate arguments so that it can kick start the graphical element. The user will most likely need some sort of README or other documentation so that they can figure out how to run the script. Once they run the script a graphical element will show up, the only potential interaction at this point would be potentially speeding up or slowing down the simulation. 
 ## Considerations
 ### Security
